@@ -1,0 +1,86 @@
+/* =============================================================================
+   @font-face Declaration
+   ========================================================================== */
+
+
+
+/* =============================================================================
+   SCSS Variables
+   ========================================================================== */
+
+$document_width: 960px;
+$margin: 20px;
+$padding: 10px;
+$columns: 4;
+$column_width: ($document_width - ($margin * ($columns - 1))) / $columns;
+
+$border: 1px;
+$border_color: #000;
+
+$font_family: Arial;
+$font_size: 14px;
+$line_height: 1.4em;
+
+$base_color: #000;
+$base_background_color: #fff;
+$body_background_color: #fff;
+
+$link_color: #ff00ff;
+$selection_color: $link_color + #222;
+$highlight_color: #ffffcc;
+
+
+/* =============================================================================
+   SCSS Mixins
+   ========================================================================== */
+
+@mixin rounded ($top_left: 5px, $top_right: $top_left, $bottom_right: $top_left, $bottom_left: $top_left) {
+	@if $top_left != 0px {
+		-webkit-border-top-left-radius: $top_left;
+		-moz-border-radius-topleft: $top_left;
+		border-top-left-radius: $top_left;
+	}
+
+	@if $top_right != 0px {
+		-webkit-border-top-right-radius: $top_right;
+		-moz-border-radius-topright: $top_right;
+		border-top-right-radius: $top_right;
+	}
+
+	@if $bottom_right != 0px {
+		-webkit-border-bottom-right-radius: $bottom_right;
+		-moz-border-radius-bottomright: $bottom_right;
+		border-bottom-right-radius: $bottom_right;
+	}
+
+	@if $bottom_left != 0px {
+		-webkit-border-bottom-left-radius: $bottom_left;
+		-moz-border-radius-bottomleft: $bottom_left;
+		border-bottom-left-radius: $bottom_left;
+	}
+}
+
+@mixin gradient ($start_color, $end_color: $start_color - #333, $angle: 0) {
+
+	$gradient_type: 1;
+	@if ($angle == 90) { $gradient_type: 0; }
+	@if ($angle == 270) { $gradient_type: 0; }
+	@if ($angle == -90) { $gradient_type: 0; }
+
+	background-color: $end_color;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start_color}', endColorstr='#{$end_color}',GradientType='#{$gradient_type}');
+	background: -moz-linear-gradient(#{$angle}deg, $start_color, $end_color);
+	background: -webkit-linear-gradient(#{$angle}deg, $start_color, $end_color);
+}
+
+@mixin shadowed ($distance: 0px, $blur: 8px, $alpha: 0.40) {
+	box-shadow: 0px $distance $blur rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: 0px $distance $blur rgba(0, 0, 0, $alpha);
+	-webkit-box-shadow: 0px $distance $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin opacity ($opacity: 0.5) {
+	opacity: $opacity;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+	filter: alpha(opacity=#{$opacity * 100});
+}

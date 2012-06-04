@@ -1,0 +1,51 @@
+/* =============================================================================
+   html5doctor.com Reset Stylesheet v1.6.1
+   Last Updated: 2010-09-17
+   Author: Richard Clark - http://richclarkdesign.com 
+   ========================================================================== */
+
+html, body, div, span, object, iframe,
+h1, h2, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, body .gform_wrapper .gsection .gfield_label, body .gform_wrapper .gfield label.gfield_label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+body {
+	line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}

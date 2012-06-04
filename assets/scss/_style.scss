@@ -1,0 +1,20 @@
+/*
+Theme Name: Boilerplate for Theme Developers
+Theme URI: http://wpdevtools.com/themes/boilerplate/
+Author: WPDevTools
+Author URI: http://wpdevtools.com/
+Description: A basic boilerplate for WordPress theme development based on in-house standards at WPDevTools
+Version: 0.2
+License: GNU General Public License
+License URI: license.txt
+Tags: boilerplate
+
+This file is generated using the SASS parser and should be edited using the files in /assets/scss
+
+*/
+
+@import "definitions";
+@import "reset";
+@import "html";
+@import "wordpress";
+@import "layout";
