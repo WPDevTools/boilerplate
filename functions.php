@@ -27,7 +27,7 @@ class Theme_Functions
 	public function enqueue_scripts () {
 		if ( !is_admin() ) {
 			wp_enqueue_script("jquery");
-			wp_enqueue_script("html5shiv", THEME_URL . '/libs/html5shiv/html5.js', 'jquery', '3.4');
+			wp_enqueue_script("modernizr", THEME_URL . '/libs/Modernizr/modernizr.js', 'jquery', 'trunk');
 			wp_enqueue_style(THEME_PREFIX, THEME_URL . 'style.css', '', THEME_VERSION);
 			wp_enqueue_script(THEME_PREFIX . "-script", THEME_URL . 'assets/js/script.js', '', THEME_VERSION, true);
 		}

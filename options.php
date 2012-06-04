@@ -107,8 +107,8 @@ class Theme_Options
 			wp_enqueue_script( THEME_PREFIX . '-upload', THEME_URL . 'assets/js/admin.js', array( 'jquery', 'media-upload', 'thickbox' ) );
 
 			// For Color Picker option elements
-			wp_enqueue_style( THEME_PREFIX . '-colorpicker', THEME_URL . 'lib/jquery-color-picker/jquery-color-picker.css' );
-			wp_enqueue_script( THEME_PREFIX . '-colorpicker', THEME_URL . 'lib/jquery-color-picker/jquery-color-picker.js', array( 'jquery' ) );
+			wp_enqueue_style( 'jquery-colorpicker', THEME_URL . 'lib/jQuery-ColorPicker/css/colorpicker.min.css' );
+			wp_enqueue_script( 'jquery-colorpicker', THEME_URL . 'lib/jQuery-ColorPicker/colorpicker.min.js', array( 'jquery' ) );
 		}
 	}
 
