@@ -9,38 +9,38 @@ html {
 }
 
 html, button, input, select, textarea {
-	font-family: sans-serif;
-	color: #222;
+	font-family: $font_family;
+	color: $base_color;
 }
 
 body {
 	margin: 0;
-	font-size: 1em;
-	line-height: 1.4;
+	font-size: $font_size;
+	line-height: $line_height;
 }
 
 ::-moz-selection {
-	background: #fe57a1;
+	background: $selection_color;
 	color: #fff;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #fe57a1;
+	background: $selection_color;
 	color: #fff;
 	text-shadow: none;
 }
 
 a {
-	color: #00e;
+	color: $link_color;
 }
 
 a:visited {
-	color: #551a8b;
+	color: $link_color;
 }
 
 a:hover {
-	color: #06e;
+	color: $link_color - #222;
 }
 
 a:focus {
@@ -68,8 +68,16 @@ dfn {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	
+	line-height: 1em;
+	margin: 0em 0em 0.5em;
 }
+
+h1 { font-size: 220%; }
+h2 { font-size: 200%; }
+h3 { font-size: 180%; }
+h4 { font-size: 160%; }
+h5 { font-size: 140%; }
+h6 { font-size: 120%; }
 
 hr {
 	display: block;
@@ -81,13 +89,13 @@ hr {
 }
 
 ins {
-	background: #ff9;
+	background: $highlight_color;
 	color: #000;
 	text-decoration: none;
 }
 
 mark {
-	background: #ff0;
+	background: $highlight_color;
 	color: #000;
 	font-style: italic;
 	font-weight: bold;
@@ -240,7 +248,7 @@ textarea {
 }
 
 input:invalid, textarea:invalid {
-	background-color: #f0dddd;
+	background-color: $error_color;
 }
 
 

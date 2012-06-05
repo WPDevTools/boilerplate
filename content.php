@@ -19,7 +19,7 @@
 		<h1 class="title"><a href="<?php the_permalink(); ?>" class="permalink"><?php the_title(); ?></a></h1>
 	</header>
 
-	<div class="thumbnail"><?php the_post_thumbnail('thumbnail'); ?></div>
+	<div class="thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div>
 
 	<div class="content">
 		<?php 
@@ -27,11 +27,6 @@
 				the_excerpt();
 			} else {
 				the_content( __( 'Read more...', THEME_NAME ) );
-				wp_link_pages( array( 
-					'before' => '<div class="page-link"><span>' . __( 'Pages:', THEME_NAME ) . '</span>',
-					'after' => '</div>',
-					'pagelink' => '%'
-				) );
 			}
 		?>
 	</div>

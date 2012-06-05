@@ -72,38 +72,38 @@ html {
 }
 
 html, button, input, select, textarea {
-  font-family: sans-serif;
-  color: #222;
+  font-family: Arial;
+  color: black;
 }
 
 body {
   margin: 0;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.4em;
 }
 
 ::-moz-selection {
-  background: #fe57a1;
+  background: #ff22ff;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fe57a1;
+  background: #ff22ff;
   color: #fff;
   text-shadow: none;
 }
 
 a {
-  color: #00e;
+  color: fuchsia;
 }
 
 a:visited {
-  color: #551a8b;
+  color: fuchsia;
 }
 
 a:hover {
-  color: #06e;
+  color: #dd00dd;
 }
 
 a:focus {
@@ -130,6 +130,35 @@ dfn {
   font-style: italic;
 }
 
+h1, h2, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title, h4, h5, h6 {
+  line-height: 1em;
+  margin: 0em 0em 0.5em;
+}
+
+h1 {
+  font-size: 220%;
+}
+
+h2, body .gform_wrapper h2.gsection_title {
+  font-size: 200%;
+}
+
+h3, body .gform_wrapper h3.gform_title {
+  font-size: 180%;
+}
+
+h4 {
+  font-size: 160%;
+}
+
+h5 {
+  font-size: 140%;
+}
+
+h6 {
+  font-size: 120%;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -140,13 +169,13 @@ hr {
 }
 
 ins {
-  background: #ff9;
+  background: #ffffcc;
   color: #000;
   text-decoration: none;
 }
 
 mark {
-  background: #ff0;
+  background: #ffffcc;
   color: #000;
   font-style: italic;
   font-weight: bold;
