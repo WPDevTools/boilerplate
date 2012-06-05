@@ -1,3 +1,10 @@
-/* =============================================================================
-   Layout Based on Media Query
-   ========================================================================== */
+/*
+Theme Name: Boilerplate
+Description: Mobile specific styling based.
+*/
+
+@import "definitions";
+@import "reset";
+@import "html";
+@import "wordpress";
+@import "mobile";

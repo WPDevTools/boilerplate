@@ -1,23 +1,7 @@
-/* =============================================================================
-   Theme Options Pages
-   ========================================================================== */
+/*
+Theme Name: Boilerplate
+Description: WordPress admin pages styling.
+*/
 
-.cp-input,
-.cp-box {
-	float: left;
-}
-
-.cp-description {
-	clear: both;
-	display: block;
-}
-
-.cp-box div {
-	margin-top: 1px;
-	margin-left: 5px;
-	width: 17px;
-	height: 17px;
-	line-height: 15px;
-	background: #eee;
-	border: 3px solid #ddd;
-}
+@import "definitions";
+@import "options";

@@ -11,3 +11,527 @@ Description: Mobile specific styling based.
 /* =============================================================================
    SCSS Mixins
    ========================================================================== */
+/* =============================================================================
+   html5doctor.com Reset Stylesheet v1.6.1
+   Last Updated: 2010-09-17
+   Author: Richard Clark - http://richclarkdesign.com 
+   ========================================================================== */
+html, body, div, span, object, iframe,
+h1, h2, body .gform_wrapper h2.gsection_title, body .gform_wrapper h2.gsection_title, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title, body .gform_wrapper h3.gform_title, body .gform_wrapper h3.gform_title, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, body .gform_wrapper .gsection .gfield_label, body .gform_wrapper .gfield label.gfield_label, body .gform_wrapper .gsection .gfield_label, body .gform_wrapper .gfield label.gfield_label, body .gform_wrapper .gfield .gsection .gfield_label, body .gform_wrapper .gsection .gfield .gfield_label, body .gform_wrapper .gfield label.gfield_label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* =============================================================================
+   Core HTML
+   ========================================================================== */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+  font-family: Arial;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+::-moz-selection {
+  background: #ff22ff;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ff22ff;
+  color: #fff;
+  text-shadow: none;
+}
+
+a {
+  color: fuchsia;
+}
+
+a:visited {
+  color: fuchsia;
+}
+
+a:hover {
+  color: #dd00dd;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1, h2, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title, h4, h5, h6 {
+  line-height: 1em;
+  margin: 0em 0em 0.5em;
+}
+
+h1 {
+  font-size: 220%;
+}
+
+h2, body .gform_wrapper h2.gsection_title {
+  font-size: 200%;
+}
+
+h3, body .gform_wrapper h3.gform_title {
+  font-size: 180%;
+}
+
+h4 {
+  font-size: 160%;
+}
+
+h5 {
+  font-size: 140%;
+}
+
+h6 {
+  font-size: 120%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ffffcc;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ffffcc;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label, body .gform_wrapper .gsection .gfield_label, body .gform_wrapper .gfield label.gfield_label {
+  cursor: pointer;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, body .gform_wrapper h2.gsection_title, h3, body .gform_wrapper h3.gform_title {
+    page-break-after: avoid;
+  }
+}
+/* =============================================================================
+   WordPress Class Styling
+   ========================================================================== */
+.alignnone {
+  margin: 10px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+a img.alignright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 0 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bypostauthor {
+  visibility: inherit;
+}
+
+img.alignnone,
+img.alignright,
+img.alignleft,
+img.aligncenter {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery .gallery-item .gallery-icon {
+  margin: 0px 0px 10px;
+}
+.gallery .gallery-item .gallery-icon img {
+  border: 10px solid white !important;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+.gallery .gallery-item .gallery-caption {
+  font-style: italic;
+}
+
+.sticky {
+  visibility: inherit;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid black;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 0 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 0 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 0 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 85%;
+  margin: 0;
+  padding: 0 5px 10px;
+}
+
+/* =============================================================================
+   Gravity Forms
+   ========================================================================== */
+body .gform_wrapper {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body .gform_wrapper ul, body .gform_wrapper ol {
+  padding: 0px 0px 10px;
+}
+body .gform_wrapper .gfield {
+  margin: 0px;
+  padding: 0px;
+}
+body .gform_wrapper .gfield input {
+  line-height: normal;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+body .gform_wrapper .ginput_container label, body .gform_wrapper .ginput_container .gsection .gfield_label, body .gform_wrapper .gsection .ginput_container .gfield_label, body .gform_wrapper .ginput_container .gfield label.gfield_label, body .gform_wrapper .gfield .ginput_container label.gfield_label {
+  font-size: 85%;
+  font-style: italic;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+/* =============================================================================
+   Layout Based on Media Query
+   ========================================================================== */

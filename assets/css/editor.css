@@ -71,8 +71,8 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-html, button, input, select, textarea {
-  font-family: Arial;
+html, body, button, input, select, textarea {
+  font-family: Arial, sans-serif;
   color: black;
 }
 

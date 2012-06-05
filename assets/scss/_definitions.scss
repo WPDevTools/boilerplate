@@ -17,7 +17,7 @@ $column_width: ($document_width - ($margin * ($columns - 1))) / $columns;
 $border: 1px;
 $border_color: #000;
 
-$font_family: Arial;
+$font_family: Arial, sans-serif;
 $font_size: 14px;
 $line_height: 1.4em;
 
@@ -29,7 +29,6 @@ $link_color: #ff00ff;
 $selection_color: $link_color + #222;
 $highlight_color: #ffffcc;
 $error_color: #f0dddd;
-
 
 /* =============================================================================
    SCSS Mixins

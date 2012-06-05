@@ -57,7 +57,7 @@ class Theme_Functions
 		if ( ! isset( $content_width ) ) $content_width = 900;
 
 		// Support theme styling in TinyMCE editor
-		add_editor_style(THEME_URL . 'assets/css/tinymce.css');
+		add_editor_style('assets/css/editor.css');
 
 		// Load the correct language files
 		load_theme_textdomain(THEME_NAME, THEME_DIR . '/assets/languages');
