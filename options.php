@@ -30,7 +30,7 @@ class Theme_Options
 	 **/
 	public function create_menu() {
 		//create new top-level menu
-		add_theme_page(__(THEME_NAME .' Theme Options'), __('Theme Options'), 'edit_theme_options', THEME_OPTIONS, array('Theme_Options', 'display_options'));
+		add_theme_page(__(THEME_NAME .' Theme Options'), __( 'Theme Options', THEME_NAME ), 'edit_theme_options', THEME_OPTIONS, array('Theme_Options', 'display_options'));
 	}
 
 	/**
@@ -82,7 +82,7 @@ class Theme_Options
 	<form method="post" action="options.php">
 		<?php settings_fields( THEME_NAME ); ?>
 		<?php do_settings_sections( THEME_OPTIONS ); ?>
-		<p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></p>
+		<p class="submit"><input type="submit" class="button-primary" value="<?php _e( 'Save Changes', THEME_NAME ) ?>" /></p>
 	</form>
 </div>
 <?php		
@@ -120,25 +120,25 @@ class Theme_Options
 		
 		/* Theme Options Placeholders / Examples */
 		// Define the section
-		add_settings_section( 'general', __('General'), array('WPDT_Options', 'section'), THEME_OPTIONS);
+		add_settings_section( 'general', __( 'General', THEME_NAME ), array('WPDT_Options', 'section'), THEME_OPTIONS);
 
 		// Checkbox
-		add_settings_field( 'checkbox-id', __('Checkbox Title'), array('WPDT_Options', 'checkbox'), THEME_OPTIONS, 'general', array( 'label_for' => 'checkbox-id', 'description' => __('Test description'), 'theme_options' => THEME_OPTIONS) );
+		add_settings_field( 'checkbox-id', __( 'Checkbox Title', THEME_NAME ), array('WPDT_Options', 'checkbox'), THEME_OPTIONS, 'general', array( 'label_for' => 'checkbox-id', 'description' => __( 'Test description', THEME_NAME ), 'theme_options' => THEME_OPTIONS) );
 
 		// Colorpicker
-		add_settings_field( 'colorpicker-id', __('Colorpicker Title'), array('WPDT_Options', 'colorpicker'), THEME_OPTIONS, 'general', array( 'label_for' => 'colorpicker-id', 'description' => __('Test description'), 'theme_options' => THEME_OPTIONS) );
+		add_settings_field( 'colorpicker-id', __( 'Colorpicker Title', THEME_NAME ), array('WPDT_Options', 'colorpicker'), THEME_OPTIONS, 'general', array( 'label_for' => 'colorpicker-id', 'description' => __( 'Test description', THEME_NAME ), 'theme_options' => THEME_OPTIONS) );
 
 		// Select
-		add_settings_field( 'select-id', __('Select Title'), array('WPDT_Options', 'select'), THEME_OPTIONS, 'general', array( 'label_for' => 'select-id', 'description' => __('Test description'), 'options' => array( __('Option 1'), __('Option 2')), 'theme_options' => THEME_OPTIONS ) );
+		add_settings_field( 'select-id', __( 'Select Title', THEME_NAME ), array('WPDT_Options', 'select'), THEME_OPTIONS, 'general', array( 'label_for' => 'select-id', 'description' => __( 'Test description', THEME_NAME ), 'options' => array( __( 'Option 1', THEME_NAME ), __( 'Option 2', THEME_NAME )), 'theme_options' => THEME_OPTIONS ) );
 
 		// Textarea
-		add_settings_field( 'textarea-id', __('Textarea Title'), array('WPDT_Options', 'textarea'), THEME_OPTIONS, 'general', array( 'label_for' => 'textarea-id', 'description' => __('Test description'), 'theme_options' => THEME_OPTIONS) );
+		add_settings_field( 'textarea-id', __( 'Textarea Title', THEME_NAME ), array('WPDT_Options', 'textarea'), THEME_OPTIONS, 'general', array( 'label_for' => 'textarea-id', 'description' => __( 'Test description', THEME_NAME ), 'theme_options' => THEME_OPTIONS) );
 
 		// Text field
-		add_settings_field( 'textfield-id', __('Textfield title'), array('WPDT_Options', 'textfield'), THEME_OPTIONS, 'general', array( 'label_for' => 'textfield-id', 'placeholder' => __('Some Text'), 'description' => __('Test description'), 'theme_options' => THEME_OPTIONS) );
+		add_settings_field( 'textfield-id', __( 'Textfield title', THEME_NAME ), array('WPDT_Options', 'textfield'), THEME_OPTIONS, 'general', array( 'label_for' => 'textfield-id', 'placeholder' => __( 'Some Text', THEME_NAME ), 'description' => __( 'Test description', THEME_NAME ), 'theme_options' => THEME_OPTIONS) );
 
 		// Media upload
-		add_settings_field( 'upload-id', __('Upload title'), array('WPDT_Options', 'upload'), THEME_OPTIONS, 'general', array( 'label_for' => 'upload-id', 'description' => __('Test description'), 'theme_options' => THEME_OPTIONS) );
+		add_settings_field( 'upload-id', __( 'Upload title', THEME_NAME ), array('WPDT_Options', 'upload'), THEME_OPTIONS, 'general', array( 'label_for' => 'upload-id', 'description' => __( 'Test description', THEME_NAME ), 'theme_options' => THEME_OPTIONS) );
 	}
 
 	/**

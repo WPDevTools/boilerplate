@@ -7,7 +7,7 @@
  **/
 
 
-define( 'THEME_URL', get_bloginfo('template_directory') . '/' );
+define( 'THEME_URL', get_template_directory_uri() . '/' );
 define( 'THEME_VERSION', '0.1' );
 define( 'THEME_DIR', dirname(__FILE__).'/' );
 define( 'THEME_PREFIX', 'replace_me' );
@@ -20,6 +20,17 @@ class Theme_Functions
 {
 
 	/**
+	 * Sets global context for comments
+	 *
+	 **/
+	public function call_comment ($comment, $args, $depth) {
+
+		$GLOBALS['comment'] = $comment;
+		include( 'comment.php' );
+
+	}
+
+	/**
 	 * Enqueues required JS and CSS scripts with WordPress
 	 *
 	 **/
@@ -30,7 +41,9 @@ class Theme_Functions
 			wp_enqueue_script("modernizr", THEME_URL . '/libs/Modernizr/modernizr.js', 'jquery', 'trunk');
 			wp_enqueue_style(THEME_PREFIX, THEME_URL . 'style.css', '', THEME_VERSION);
 			wp_enqueue_script(THEME_PREFIX . "-script", THEME_URL . 'assets/js/script.js', '', THEME_VERSION, true);
+			if ( is_singular() ) wp_enqueue_script( "comment-reply" );
 		}
+
 	}
 
 	/**
@@ -39,6 +52,18 @@ class Theme_Functions
 	 **/
 
 	public function theme_setup () {
+
+		// Set the document width
+		if ( ! isset( $content_width ) ) $content_width = 900;
+
+		// Support theme styling in TinyMCE editor
+		add_editor_style(THEME_URL . 'assets/css/tinymce.css');
+
+		// Load the correct language files
+		load_theme_textdomain(THEME_NAME, THEME_DIR . '/assets/languages');
+		
+		// Support automatic feed links
+		add_theme_support( 'automatic-feed-links' );
 
 		// Support post thumbnails
 		add_theme_support( 'post-thumbnails' );

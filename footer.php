@@ -4,7 +4,7 @@
  *
  * Contains the closing of <div id="container"> and all content after
  *
- * @package BOILERPLATE Theme
+ * @package REPLACE_ME Theme
  **/
 
 ?>
