@@ -9,11 +9,11 @@
 
 ?>
 
-<?php do_action( 'before_single' ); ?>
+<?php do_action( 'before_post' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php do_action( 'open_single' ); ?>
+	<?php do_action( 'open_post' ); ?>
 
 	<header>
 		<h1 class="title"><a href="<?php the_permalink(); ?>" class="permalink"><?php the_title(); ?></a></h1>
@@ -49,11 +49,13 @@
 			<span class="comment-count"><a href="<?php comments_link(); ?>"><?php comments_number( __( '0 Comments', THEME_NAME ), __( '1 Comment', THEME_NAME ), __( '% Comments', THEME_NAME ) ); ?></a></span>
 			<?php endif; // have_comments() || comments_open ?>
 
+			<?php if ( has_tag() ) : ?><span class="tags"><?php the_tags(); ?></span><?php endif; // has_tags ?>
+
 		</ul>
 	</footer>
 	
-	<?php do_action( 'close_single' ); ?>
+	<?php do_action( 'close_post' ); ?>
 	
 </article>
 
-<?php do_action( 'after_single' ); ?>
+<?php do_action( 'after_post' ); ?>

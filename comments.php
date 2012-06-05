@@ -5,6 +5,9 @@
  * @package REPLACE_ME Theme
  */
 
+global $req;
+global $aria_req;
+
 ?>
 
 <?php if ( comments_open() ) : ?>

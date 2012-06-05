@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 <div id="container">
 	<div id="header">
-		<h1><a href="<?php bloginfo('url'); ?>"><span><?php bloginfo('name'); ?></span></a></h1>
+		<h1><a href="<?php echo home_url(); ?>"><span><?php bloginfo('name'); ?></span></a></h1>
 		<nav>
 			<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 		</nav>

@@ -44,6 +44,8 @@
 			?>
 			</span>
 
+			<?php if ( has_tag() ) : ?><span class="tags"><?php the_tags(); ?></span><?php endif; // has_tags ?>
+
 		</ul>
 	</footer>
 	
