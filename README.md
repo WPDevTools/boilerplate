@@ -2,6 +2,10 @@
 
 A basic boilerplate for WordPress theme development based on in-house standards at WPDevTools.
 
+**Boilerplate is not** a framework, parent theme, or code library.  It is not intented to be used as-is on a site (seriously - it's not very pretty without styling).  Boilerplate is not a product intended to be purchased or sold, though we hope themes built with it are successful and sold.  Boilerplate is not API laden - we choose to use WordPress core functionality rather than rewriting everything from scratch.  It's not legacy code, dumped on the public and forgotten.  Boilerplate is not just another WordPress theme. 
+
+**Boilerplate is** a fully functional, Theme Check tested WordPress theme that helps jump-start your theme development process.  It is designed to help web professionals by providing boilerplate code for all of the core functionality in WordPress plus support for many popular theme elements not included in the WordPress API, all in a clean, well documented package.  Developers can reuse demonstration and placeholder code to quickly build complicated theme components like option pages and threaded comment blocks.  Boilerplate uses the GPLv2 license, so developers can modify and redistribute the code without worrying about complicated licensing schemes.
+
 ## Features
 
 ### HTML / CSS / JS
@@ -23,6 +27,10 @@ A basic boilerplate for WordPress theme development based on in-house standards 
 * jQuery ColorPicker [http://belelros.github.com/jQuery-ColorPicker/](http://belelros.github.com/jQuery-ColorPicker/)
 * WPDevTools Core
 * WPDevTools Theme
+
+## How to Use Boilerplate
+
+More to come!
 
 ## License
 
