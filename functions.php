@@ -15,6 +15,7 @@ define( 'THEME_NAME', 'REPLACE_ME' );
 define( 'THEME_OPTIONS', THEME_PREFIX . '_options' );
 
 require_once(THEME_DIR . 'options.php');
+require_once(THEME_DIR . 'lib/wpdt-core/utility.php');
 
 class Theme_Functions
 {
@@ -37,10 +38,19 @@ class Theme_Functions
 
 	public function enqueue_scripts () {
 		if ( !is_admin() ) {
+			// jQuery and Modernizr
 			wp_enqueue_script("jquery");
 			wp_enqueue_script("modernizr", THEME_URL . '/libs/Modernizr/modernizr.js', 'jquery', 'trunk');
-			wp_enqueue_style(THEME_PREFIX, THEME_URL . 'style.css', '', THEME_VERSION);
+
+			// Theme scripts
+			if (WPDT_Utility::is_mobile()) {
+				wp_enqueue_style(THEME_PREFIX, THEME_URL . 'assets/css/mobile.css', '', THEME_VERSION);
+			} else {
+				wp_enqueue_style(THEME_PREFIX, THEME_URL . 'style.css', '', THEME_VERSION);
+			}
 			wp_enqueue_script(THEME_PREFIX . "-script", THEME_URL . 'assets/js/script.js', '', THEME_VERSION, true);
+			
+			// Threaded comment form handler
 			if ( is_singular() ) wp_enqueue_script( "comment-reply" );
 		}
 
