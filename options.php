@@ -6,7 +6,7 @@
  * @author Christopher Frazier (chris@wpdevtools.com), David Sutoyo (david@wpdevtools.com)
  **/
 
-require_once(THEME_DIR . '/lib/wpdt-core/options.php');
+require_once(THEME_DIR . 'lib/wpdt-core/options.php');
 
 class Theme_Options
 {
