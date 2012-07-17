@@ -44,7 +44,7 @@
 			?>
 			</span>
 
-		</ul>
+		</ul> <!-- Hanging UL related to threaded comments -->
 	</footer>
 	
 	<?php do_action( 'close_page' ); ?>
