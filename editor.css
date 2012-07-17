@@ -539,5 +539,14 @@ body .gform_wrapper .ginput_container label, body .gform_wrapper .ginput_contain
    Layouts
    ========================================================================== */
 /* =============================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+/* =============================================================================
    Tiny MCE
    ========================================================================== */
