@@ -71,8 +71,8 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-html, button, input, select, textarea {
-  font-family: Arial;
+html, body, button, input, select, textarea {
+  font-family: Arial, sans-serif;
   color: black;
 }
 
@@ -533,5 +533,14 @@ body .gform_wrapper .ginput_container label, body .gform_wrapper .ginput_contain
 }
 
 /* =============================================================================
+   General Mobile Layout
+   ========================================================================== */
+/* =============================================================================
    Layout Based on Media Query
    ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}

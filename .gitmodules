@@ -1,9 +1,9 @@
 [submodule "lib/wpdt-core"]
 	path = lib/wpdt-core
-	url = git@github.com:WPDevTools/wpdt-core.git
+url=git://github.com/WPDevTools/wpdt-core.git
 [submodule "lib/wpdt-theme"]
 	path = lib/wpdt-theme
-	url = git@github.com:WPDevTools/wpdt-theme.git
+url=git://github.com/WPDevTools/wpdt-theme.git
 [submodule "lib/jQuery-ColorPicker"]
 	path = lib/jQuery-ColorPicker
 	url = https://github.com/Belelros/jQuery-ColorPicker.git

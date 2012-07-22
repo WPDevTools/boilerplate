@@ -40,11 +40,11 @@ class Theme_Functions
 		if ( !is_admin() ) {
 			// jQuery and Modernizr
 			wp_enqueue_script("jquery");
-			wp_enqueue_script("modernizr", THEME_URL . '/libs/Modernizr/modernizr.js', 'jquery', 'trunk');
+			wp_enqueue_script("modernizr", THEME_URL . '/lib/Modernizr/modernizr.js', 'jquery', 'trunk');
 
 			// Theme scripts
 			if (WPDT_Utility::is_mobile()) {
-				wp_enqueue_style(THEME_PREFIX, THEME_URL . 'assets/css/mobile.css', '', THEME_VERSION);
+				wp_enqueue_style(THEME_PREFIX, THEME_URL . 'mobile.css', '', THEME_VERSION);
 			} else {
 				wp_enqueue_style(THEME_PREFIX, THEME_URL . 'style.css', '', THEME_VERSION);
 			}
@@ -67,7 +67,7 @@ class Theme_Functions
 		if ( ! isset( $content_width ) ) $content_width = 900;
 
 		// Support theme styling in TinyMCE editor
-		add_editor_style('assets/css/editor.css');
+		add_editor_style('editor.css');
 
 		// Load the correct language files
 		load_theme_textdomain(THEME_NAME, THEME_DIR . '/assets/languages');

@@ -98,7 +98,7 @@ class Theme_Options
 		if ( is_admin() ) {
 		
 			// General option page styling
-			wp_enqueue_style( THEME_PREFIX . '-options', THEME_URL . 'assets/css/options.css' );
+			wp_enqueue_style( THEME_PREFIX . '-options', THEME_URL . 'options.css' );
 
 			// For media upload elements
 			wp_enqueue_style( 'thickbox' );
