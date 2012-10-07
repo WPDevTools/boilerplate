@@ -40,7 +40,7 @@ class Theme_Functions
 		if ( !is_admin() ) {
 			// jQuery and Modernizr
 			wp_enqueue_script("jquery");
-			wp_enqueue_script("modernizr", THEME_URL . '/lib/Modernizr/modernizr.js', 'jquery', 'trunk');
+			wp_enqueue_script("modernizr", THEME_URL . 'lib/Modernizr/modernizr.js', 'jquery', 'trunk');
 
 			// Theme scripts
 			if (WPDT_Utility::is_mobile()) {
