@@ -1,3 +1,2 @@
 #! /bin/sh
-sass --style compressed --watch \
-	.:../css
+sass --style compressed --watch .:../css
