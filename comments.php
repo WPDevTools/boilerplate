@@ -12,7 +12,7 @@ global $aria_req;
 
 <?php if ( comments_open() ) : ?>
 
-<section class="comments">
+<section id="comments" class="comments">
 
 	<?php if ( have_comments() ) : ?>
 		<header>
